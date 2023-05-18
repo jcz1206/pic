@@ -1,0 +1,15 @@
+
+/* #app{
+    height: calc(100% - 20px);
+} */
+.input-s2{
+    height: .5rem;
+}
+.search-keyword{
+    width: calc(100% - .5rem);
+    height: .5rem;
+}
+.input-s img {
+    width: .5rem;
+    height: .5rem;
+}
