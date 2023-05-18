@@ -76,6 +76,18 @@ createApp({
         },
         sS(){
             this.s = true;
+            this.$nextTick(()=>{
+                this.$refs.inputSearch.focus();
+                // var dom = document.querySelector('#inputSearch')
+                // var evt = new InputEvent('input', {
+                //     inputType: 'insertText',
+                //     data: '',
+                //     dataTransfer: null,
+                //     isComposing: false
+                // });
+                // // dom.value = '输入的内容';
+                // dom.dispatchEvent(evt);
+            })
           // 反例：无法访问此处的 `this`!
         },
         hS(){
