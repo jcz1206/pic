@@ -4,7 +4,7 @@
 
 var swiperParams = {
     loop: true, // 循环模式选项
-    // autoplay: true,//可选选项，自动滑动
+    autoplay: true,//可选选项，自动滑动
     // grabCursor: true,
     watchSlidesProgress: true,
     mousewheelControl: true,
