@@ -129,9 +129,7 @@ var images1 = [
 var images = [
     {
         id: '陈菁华 王希明 刘可夫 黄健 章晓慧 盛志洪',
-        url1: './images/陈菁华 王希明 刘可夫 黄健 章晓慧 盛志洪.jpg',
-        url: 'https://images.cnblogs.com/cnblogs_com/jcz1206/542960/o_230517125500_%E9%99%88%E8%8F%81%E5%8D%8E%20%E7%8E%8B%E5%B8%8C%E6%98%8E%20%E5%88%98%E5%8F%AF%E5%A4%AB%20%E9%BB%84%E5%81%A5%20%E7%AB%A0%E6%99%93%E6%85%A7%20%E7%9B%9B%E5%BF%97%E6%B4%AA.jpg'
-        
+        url: './images/陈菁华 王希明 刘可夫 黄健 章晓慧 盛志洪.jpg',
     },
     {
         id: '陈菁华 王希明 刘可夫 黄健',
