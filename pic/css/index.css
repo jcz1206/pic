@@ -1,6 +1,10 @@
 body {
     overflow: hidden;
 }
+body {
+    margin: 0;
+    font-size: 28px;
+  }
 #app{
     /* height: 500px; */
     height: calc(100vh - 20px);
@@ -124,10 +128,13 @@ body {
     outline: none;
     width: calc(100% - 24px);
     box-sizing: border-box;
-
+    height: 3vh;
+    float: left;
 }
 .input-s img {
     float: right;
+    width: 3vh;
+    height: 3vh;
 }
 /* .input-s .s2 {
     right: 0;
