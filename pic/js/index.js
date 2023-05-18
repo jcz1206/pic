@@ -37,7 +37,8 @@ var swiperParams = {
 }
 
 var mySwiper;
-function setSwiper() {
+function setSwiper(v) {
+    swiperParams.autoplay = v.trim().length <= 0;
     mySwiper = new Swiper ('.swiper', swiperParams);
 }
 
@@ -70,7 +71,7 @@ createApp({
         cS(){
             this.items = ss(this.sv);
             this.sv1 = this.sv;
-            setTimeout(()=>{setSwiper();}, 100)
+            setTimeout(()=>{setSwiper(this.sv1);}, 100)
             
         },
         sS(){
