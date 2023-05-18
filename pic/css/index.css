@@ -116,7 +116,7 @@ body {
     border: none;
     border: 1px solid #74b3fb;
     width: 100%;
-    height: 24px;
+    height: 3vh;
     background-color: #fff;
 }
 .search-keyword{
@@ -126,7 +126,7 @@ body {
     color: #999;
     /* border: 1px solid #072547; */
     outline: none;
-    width: calc(100% - 24px);
+    width: calc(100% - 3vh);
     box-sizing: border-box;
     height: 3vh;
     float: left;

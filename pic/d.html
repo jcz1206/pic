@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-<script src="./node_modules/amfe-flexible/index.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script src="./js/flexible.js"></script>
     <link rel="stylesheet" href="./js/s/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/a.css">
+    <link rel="stylesheet" href="./css/b.css">
 </head>
 <body>
     <script src="./js/s/swiper-bundle.min.js"></script>
@@ -25,13 +25,13 @@
                 <div class="swiper-slide">Slide 2</div>
                 <div class="swiper-slide">Slide 3</div> -->
                 <div class="swiper-slide" v-for="item in items">
-                    <!-- <img :src="item.url" :alt="item.id" /> -->
-                    <div class="slide-inner" :style="`background-image: url('${item.url}'); transform: translate3d(0px, 0px, 0px); transition: all 0ms ease 0s;`"></div>
+                    <img :src="item.url" :alt="item.id" />
+                    <!-- <div class="slide-inner" :style="`background-image: url('${item.url}'); transform: translate3d(0px, 0px, 0px); transition: all 0ms ease 0s;`"></div> -->
                     <!-- {{item.id}} -->
                 </div>
             </div>
             <!-- 如果需要分页器 -->
-            <div class="swiper-pagination" :key="sv1"></div>
+            <div class="swiper-pagination"></div>
             
             <!-- 如果需要导航按钮 -->
             <!-- <div class="arrow-left"></div>
