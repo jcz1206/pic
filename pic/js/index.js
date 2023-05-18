@@ -38,7 +38,7 @@ var swiperParams = {
 
 var mySwiper;
 function setSwiper(v) {
-    swiperParams.autoplay = v.trim().length <= 0;
+    swiperParams.autoplay = !v || (v && v.trim().length <= 0);
     mySwiper = new Swiper ('.swiper', swiperParams);
 }
 
