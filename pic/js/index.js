@@ -65,13 +65,31 @@ createApp({
             s: false,
             sv:'',
             sv1: '',
+            has: true,
         }
     },
     methods: {
+        getItems(v){
+            if (v.trim()){
+                const a = images.filter(item=>{
+                    return item.id.indexOf(v)>-1;
+                });
+                if (a.length > 0) {
+                    this.has = true;
+                    return a;
+                } else {
+                    this.has = false;
+                }
+                return a;
+            }
+            this.has = true;
+            return images;
+        },
         cS(){
-            this.items = ss(this.sv);
+            this.items = this.getItems(this.sv);
             this.sv1 = this.sv;
-            setTimeout(()=>{setSwiper(this.sv1);}, 100)
+            setTimeout(()=>{setSwiper(this.sv1);
+            }, 1000)
             
         },
         sS(){
