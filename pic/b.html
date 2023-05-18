@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="./js/s/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/b.css">
+</head>
+<body>
+    <script src="./js/s/swiper-bundle.min.js"></script>
+    <script src="./js/vue.js"></script>
+    <div id="app">
+        <div class="input-s">
+            <div class="input-s2" v-if="s" >
+                <input class="search-keyword" v-model="sv" />
+                <img src="./css/204.svg"  class="s2" v-on:click="cS"/>
+            </div>
+            <img v-else src="./css/204.svg" v-on:click="sS" class="s1"/>
+        </div>
+        <div class="swiper" v-on:click="hS" :key="sv1">
+            <div class="swiper-wrapper">
+                <!-- <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div> -->
+                <div class="swiper-slide" v-for="item in items">
+                    <img :src="item.url" :alt="item.id" />
+                    <!-- <div class="slide-inner" :style="`background-image: url('${item.url}'); transform: translate3d(0px, 0px, 0px); transition: all 0ms ease 0s;`"></div> -->
+                    <!-- {{item.id}} -->
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- 如果需要导航按钮 -->
+            <!-- <div class="arrow-left"></div>
+            <div class="arrow-right"></div> -->
+            <!-- <div class="swiper-button-prev arrow-left"></div>
+            <div class="swiper-button-next arrow-right"></div> -->
+            
+            <!-- 如果需要滚动条 -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </div>
+    <script src="./js/images.js"></script>
+    <script src="./js/index.js"></script>
+   
+</body>
+</html>
